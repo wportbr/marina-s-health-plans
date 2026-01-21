@@ -169,6 +169,17 @@
   }
 }
 
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
 @keyframes slide-up {
   from {
     opacity: 0;
@@ -189,6 +200,62 @@
   }
 }
 
+@keyframes grow-up {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes leaf-sway {
+  0%, 100% {
+    transform: rotate(0deg) translateX(-140%);
+  }
+  50% {
+    transform: rotate(5deg) translateX(-140%);
+  }
+}
+
+@keyframes leaf-sway-reverse {
+  0%, 100% {
+    transform: rotate(0deg) translateX(40%);
+  }
+  50% {
+    transform: rotate(-5deg) translateX(40%);
+  }
+}
+
+@keyframes leaf-float {
+  0%, 100% {
+    transform: translateX(-20%) rotate(-20deg) translateY(0);
+  }
+  50% {
+    transform: translateX(-20%) rotate(-15deg) translateY(-5px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -197,12 +264,40 @@
   animation: pulse-soft 3s ease-in-out infinite;
 }
 
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
 .animate-slide-up {
   animation: slide-up 0.6s ease-out forwards;
 }
 
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-grow-up {
+  animation: grow-up 1s ease-out forwards;
+}
+
+.animate-leaf-sway {
+  animation: leaf-sway 4s ease-in-out infinite;
+}
+
+.animate-leaf-sway-reverse {
+  animation: leaf-sway-reverse 4s ease-in-out infinite;
+}
+
+.animate-leaf-float {
+  animation: leaf-float 5s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 25s linear infinite;
 }
 
 /* Stagger animations for lists */
