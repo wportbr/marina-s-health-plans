@@ -82,58 +82,60 @@ const HeroSection = () => {
           </div>
 
           {/* Creative Logo Animation */}
-          <div className="relative flex items-center justify-center min-h-[300px] md:min-h-[500px] animate-slide-up stagger-2">
+          <div className="relative flex items-center justify-center min-h-[320px] md:min-h-[500px] animate-slide-up stagger-2">
             {/* Background glow effects */}
-            <div className="absolute w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow" />
-            <div className="absolute w-48 h-48 md:w-72 md:h-72 bg-accent/40 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+            <div className="absolute w-72 h-72 md:w-[420px] md:h-[420px] bg-primary/8 rounded-full blur-3xl animate-pulse-slow" />
+            <div className="absolute w-56 h-56 md:w-80 md:h-80 bg-accent/50 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
             
-            {/* Main logo illustration */}
-            <div className="relative z-10">
-              {/* Stem */}
-              <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-4 md:w-6 h-32 md:h-48 bg-gradient-to-t from-primary to-primary/80 rounded-full animate-grow-up origin-bottom" />
+            {/* Main logo illustration - faithful to the logo */}
+            <div className="relative z-10 w-[200px] h-[280px] md:w-[280px] md:h-[380px]">
               
-              {/* Left leaf 1 */}
+              {/* Stem - coral/orange vertical bar */}
               <div 
-                className="absolute left-1/2 bottom-20 md:bottom-32 -translate-x-[140%] w-16 h-24 md:w-24 md:h-36 bg-accent rounded-[60%_40%_70%_30%] animate-leaf-sway origin-bottom-right"
-                style={{ animationDelay: '0.3s' }}
+                className="absolute left-1/2 -translate-x-1/2 bottom-0 w-6 md:w-8 h-[120px] md:h-[180px] rounded-full animate-grow-up origin-bottom"
+                style={{ background: 'linear-gradient(to top, hsl(24 95% 53%), hsl(24 90% 58%))' }}
               />
               
-              {/* Right leaf 1 */}
+              {/* Large left leaf - main leaf */}
               <div 
-                className="absolute left-1/2 bottom-16 md:bottom-24 translate-x-[40%] w-14 h-20 md:w-20 md:h-28 bg-accent/80 rounded-[40%_60%_30%_70%] animate-leaf-sway-reverse origin-bottom-left"
-                style={{ animationDelay: '0.6s' }}
+                className="absolute bottom-[90px] md:bottom-[140px] left-[10px] md:left-[10px] w-[70px] h-[100px] md:w-[100px] md:h-[140px] rotate-[-25deg] animate-leaf-left"
+                style={{ 
+                  background: 'hsl(28 70% 85%)',
+                  borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+                }}
               />
               
-              {/* Top leaf */}
+              {/* Top right leaf - upper leaf */}
               <div 
-                className="absolute left-1/2 bottom-28 md:bottom-44 -translate-x-[20%] w-12 h-20 md:w-16 md:h-28 bg-accent/90 rounded-[50%_50%_60%_40%] rotate-[-20deg] animate-leaf-float"
-                style={{ animationDelay: '0.9s' }}
+                className="absolute top-[20px] md:top-[30px] right-[20px] md:right-[25px] w-[60px] h-[85px] md:w-[85px] md:h-[120px] rotate-[35deg] animate-leaf-right"
+                style={{ 
+                  background: 'hsl(28 70% 85%)',
+                  borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+                  animationDelay: '0.3s'
+                }}
               />
               
-              {/* Small accent leaves */}
+              {/* Bottom right leaf - smaller leaf */}
               <div 
-                className="absolute left-1/2 bottom-12 md:bottom-16 -translate-x-[180%] w-8 h-12 md:w-10 md:h-16 bg-primary/30 rounded-[60%_40%_70%_30%] animate-leaf-sway"
-                style={{ animationDelay: '1.2s' }}
-              />
-              <div 
-                className="absolute left-1/2 bottom-36 md:bottom-52 translate-x-[80%] w-10 h-14 md:w-14 md:h-20 bg-accent/60 rounded-[40%_60%_30%_70%] animate-leaf-sway-reverse"
-                style={{ animationDelay: '1.5s' }}
+                className="absolute bottom-[50px] md:bottom-[70px] right-[15px] md:right-[20px] w-[50px] h-[70px] md:w-[70px] md:h-[95px] rotate-[40deg] animate-leaf-right"
+                style={{ 
+                  background: 'hsl(28 70% 85%)',
+                  borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%',
+                  animationDelay: '0.6s'
+                }}
               />
               
-              {/* Floating particles */}
-              <div className="absolute -top-4 left-0 w-3 h-3 md:w-4 md:h-4 bg-primary/40 rounded-full animate-float" style={{ animationDelay: '0s' }} />
-              <div className="absolute top-8 -right-8 w-2 h-2 md:w-3 md:h-3 bg-accent rounded-full animate-float" style={{ animationDelay: '0.5s' }} />
-              <div className="absolute top-20 -left-12 w-4 h-4 md:w-5 md:h-5 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '1s' }} />
-              <div className="absolute -bottom-8 right-4 w-3 h-3 bg-accent/60 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
-              <div className="absolute top-4 right-12 w-2 h-2 bg-primary/50 rounded-full animate-float" style={{ animationDelay: '2s' }} />
-              
-              {/* Spacer for layout */}
-              <div className="w-48 h-48 md:w-72 md:h-72" />
             </div>
             
+            {/* Subtle floating particles */}
+            <div className="absolute top-[15%] left-[20%] w-3 h-3 md:w-4 md:h-4 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '0s' }} />
+            <div className="absolute top-[30%] right-[15%] w-2 h-2 md:w-3 md:h-3 bg-accent rounded-full animate-float" style={{ animationDelay: '0.7s' }} />
+            <div className="absolute bottom-[25%] left-[15%] w-3 h-3 md:w-4 md:h-4 bg-accent/80 rounded-full animate-float" style={{ animationDelay: '1.4s' }} />
+            <div className="absolute bottom-[15%] right-[25%] w-2 h-2 md:w-3 md:h-3 bg-primary/40 rounded-full animate-float" style={{ animationDelay: '2.1s' }} />
+            
             {/* Decorative rings */}
-            <div className="absolute w-56 h-56 md:w-80 md:h-80 border-2 border-accent/20 rounded-full animate-spin-slow" />
-            <div className="absolute w-44 h-44 md:w-64 md:h-64 border border-primary/10 rounded-full animate-spin-slow-reverse" />
+            <div className="absolute w-64 h-64 md:w-96 md:h-96 border-2 border-accent/15 rounded-full animate-spin-slow" />
+            <div className="absolute w-52 h-52 md:w-80 md:h-80 border border-primary/8 rounded-full animate-spin-slow-reverse" />
           </div>
         </div>
       </div>
