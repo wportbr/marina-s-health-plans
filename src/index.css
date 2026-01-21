@@ -211,48 +211,21 @@
   }
 }
 
-@keyframes leaf-sway {
+@keyframes leaf-left {
   0%, 100% {
-    transform: rotate(0deg) translateX(-140%);
+    transform: rotate(-25deg);
   }
   50% {
-    transform: rotate(5deg) translateX(-140%);
+    transform: rotate(-20deg);
   }
 }
 
-@keyframes leaf-sway-reverse {
+@keyframes leaf-right {
   0%, 100% {
-    transform: rotate(0deg) translateX(40%);
+    transform: rotate(35deg);
   }
   50% {
-    transform: rotate(-5deg) translateX(40%);
-  }
-}
-
-@keyframes leaf-float {
-  0%, 100% {
-    transform: translateX(-20%) rotate(-20deg) translateY(0);
-  }
-  50% {
-    transform: translateX(-20%) rotate(-15deg) translateY(-5px);
-  }
-}
-
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin-slow-reverse {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
+    transform: rotate(40deg);
   }
 }
 
@@ -290,6 +263,14 @@
 
 .animate-leaf-float {
   animation: leaf-float 5s ease-in-out infinite;
+}
+
+.animate-leaf-left {
+  animation: leaf-left 4s ease-in-out infinite;
+}
+
+.animate-leaf-right {
+  animation: leaf-right 4s ease-in-out infinite;
 }
 
 .animate-spin-slow {
