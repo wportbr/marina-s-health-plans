@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:block">
               <p className="font-bold text-foreground leading-tight">Corretora de Planos de Saúde</p>
-              <p className="text-sm text-muted-foreground leading-tight">Mariana Barros</p>
+              <p className="text-sm text-muted-foreground leading-tight">Marina Barros</p>
             </div>
           </a>
 
