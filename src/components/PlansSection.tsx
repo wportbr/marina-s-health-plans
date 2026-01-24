@@ -31,10 +31,10 @@ const PlansSection = () => {
       title: "Empresarial",
       description: "Soluções para sua empresa",
       features: [
-        "A partir de 2 vidas",
+        "Disponível para 1 vida ou mais",
         "MEI e CNPJ",
         "Coparticipação opcional",
-        "Gestão simplificada",
+        "Desconto de até 40%",
       ],
       highlighted: false,
     },
@@ -141,20 +141,6 @@ const PlansSection = () => {
           </div>
         </div>
 
-        {/* Additional Features */}
-        <div className="bg-secondary rounded-2xl p-6 md:p-8">
-          <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-            Também trabalhamos com:
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {allFeatures.map((feature, index) => (
-              <div key={index} className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-secondary-foreground">{feature}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
