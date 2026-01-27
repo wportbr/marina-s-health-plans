@@ -1,18 +1,19 @@
 const ProvidersSection = () => {
   const providers = [
-    { name: "Unimed", logo: "images/unimed.png" },
-    { name: "Bradesco Saúde", logo: "images/bradesco-saude.jpg" },
-    { name: "SulAmérica", logo: "images/sulamerica.png" },
-    { name: "Amil", logo: "images/amil.png" },
+    { name: "Blue Med", logo: "images/blue-med.png" },
+    { name: "Ana Costa Saúde", logo: "images/Ana-Costa-Saude.png" },
+    { name: "Santa Saúde", logo: "images/santa_saude.png" },
+    { name: "Trasmontano", logo: "images/trasmontano.png" },
     { name: "Porto Seguro", logo: "images/porto_saude.png" },
     { name: "NotreDame Intermédica", logo: "images/notredame.png" },
   ];
 
+
   const extraProviders = [
-  { name: "Blue Med", logo: "images/blue-med.png" },
-  { name: "Ana Costa Saúde", logo: "images/Ana-Costa-Saude.png" },
-  { name: "Santa Saúde", logo: "images/santa_saude.png" },
-  { name: "Trasmontano", logo: "images/trasmontano.png" },
+    { name: "Unimed", logo: "images/unimed.png" },
+    { name: "Bradesco Saúde", logo: "images/bradesco-saude.jpg" },
+    { name: "SulAmérica", logo: "images/sulamerica.png" },
+    { name: "Amil", logo: "images/amil.png" },
 ];
 
   return (
