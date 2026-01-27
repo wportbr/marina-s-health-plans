@@ -8,6 +8,13 @@ const ProvidersSection = () => {
     { name: "NotreDame Intermédica", logo: "images/notredame.png" },
   ];
 
+  const extraProviders = [
+  { name: "Blue Med", logo: "images/blue-med.png" },
+  { name: "Ana Costa Saúde", logo: "images/Ana-Costa-Saude.png" },
+  { name: "Santa Saúde", logo: "images/santa_saude.png" },
+  { name: "Trasmontano", logo: "images/trasmontano.png" },
+];
+
   return (
     <section id="operadoras" className="py-20 md:py-28 gradient-hero">
       <div className="container mx-auto px-4">
@@ -49,7 +56,6 @@ const ProvidersSection = () => {
               className="
                 max-h-13 
                 object-contain
-                /*opacity-60 grayscale*/
                 transition-all duration-300
                 group-hover:opacity-100 group-hover:grayscale-0
                 group-hover:scale-105
@@ -59,13 +65,49 @@ const ProvidersSection = () => {
         ))}
       </div>
 
-        <div className="mt-8 text-center">
-          <p className="text-muted-foreground">
-            E mais: Blue Med, Ana Costa Saúde, Santa Casa Saúde, Prevent Senior, Trasmontano
-          </p>
+      <div className="mt-10 flex justify-center">
+        <div
+          className="
+            grid gap-10
+            grid-cols-[repeat(auto-fit,minmax(110px,1fr))]
+            max-w-3xl
+            w-full
+            justify-items-center
+          "
+        >
+        {extraProviders.map((provider, index) => (
+          <div
+            key={index}
+            className="
+              bg-card/60 backdrop-blur
+              p-2 rounded-xl
+              border border-border/40
+              shadow-sm hover:shadow-md
+              transition-all duration-300
+              flex items-center justify-center
+              h-24 w-full
+              hover:-translate-y-1
+            "
+          >
+            <img
+              src={provider.logo}
+              alt={provider.name}
+              className="
+                max-h-20
+                object-contain
+                transition-all duration-300
+                group-hover:opacity-100
+                group-hover:scale-105
+              "
+            />
+          </div>
+        ))}
         </div>
       </div>
+      </div>
     </section>
+
+    
   );
 };
 
