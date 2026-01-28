@@ -17,13 +17,13 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground text-center">
-            © {currentYear} Marina da Costa Barros. Todos os direitos reservados.
+            © {currentYear} WPORT. Todos os direitos reservados.
           </p>
 
-          {/* Made with love */}
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Feito com <Heart className="w-4 h-4 text-primary fill-current" /> na Baixada Santista
-          </p>
+          <a href="https://wportbr.netlify.app/"> 
+            <img src="/images/wportlogo.png" alt="WPORT Logo" width="200" />
+          </a>
+
         </div>
       </div>
     </footer>
